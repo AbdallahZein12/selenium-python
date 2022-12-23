@@ -5,10 +5,13 @@
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
+from selenium.webdriver.chrome.options import Options
+chrome_options = Options()
  
 chrome_path = r"C:\Users\abdal\Downloads\chromedriver.exe"
-driver = webdriver.Chrome(chrome_path)
-driver.minimize_window() #minimizing window to allow complete use of CLI 
+chrome_options.headless = True
+driver = webdriver.Chrome(options=chrome_options)
+
 def searcher1(): #subroutine to allow for the user to repeat actions depending on later inputs 
     driver.get("https://www.google.com") 
     search = input("Search> ")
