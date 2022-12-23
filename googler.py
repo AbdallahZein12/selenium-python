@@ -8,7 +8,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.options import Options
 chrome_options = Options()
  
-chrome_path = r"C:\Users\abdal\Downloads\chromedriver.exe"
+chrome_path = r"C:\Users\abdal\Downloads\chromedriver.exe" #ensure to select proper directory of your chrome driver 
 chrome_options.headless = True
 driver = webdriver.Chrome(options=chrome_options)
 
