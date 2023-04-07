@@ -6,4 +6,4 @@ Web scraping scripts I created with selenium and python!!
 
 - Both web scraping scripts use selenium to extract and display information. 
 
-- Used Python, google's web application and Selenium.
+- Used Python, google's web application and Selenium..
